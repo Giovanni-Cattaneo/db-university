@@ -21,7 +21,8 @@ id | BIGINT | UNIQUE | AI | PK | NOTNULL | INDEX
 name | VARCHAR(50) | NOTNULL | 
 ?head
 
-## subject
+ <!-- corso di laurea -->
+## courses 
 id | BIGINT | UNIQUE | AI | FK | NOTNULL | INDEX
 name | VARCHAR(255) | NOTNULL
 description | TEXT | NULL
@@ -30,7 +31,9 @@ partecipants | SMALLINT | NULL
 cfu | TINYINT | NOTNULL
 years | TINYINT | NOTNULL
 
-## courses
+
+<!-- materia del corso -->
+## subjects
 id | BIGINT | UNIQUE | AI | FK | NOTNULL | INDEX
 name | VARCHAR(255) | NOTNULL
 description | TEXT | NULL
