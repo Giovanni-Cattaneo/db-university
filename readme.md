@@ -92,12 +92,14 @@ Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi cors
 -select * from courses WHERE period = 'I semestre' and year = '1';
 
 Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020 (21)
-
+- SELECT * FROM exams WHERE date = '2020-06-20' AND TIME(hour) > '14:00:00';
+  
 Selezionare tutti i corsi di laurea magistrale (38)
+- select * from degrees where level = 'magistrale';
 
 Da quanti dipartimenti è composta l'università? (12)
+- SELECT COUNT(*) FROM departments;
 
 Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
-
-Confermate lettura come al solito e buon divertimento :baby-yoda: :sql:
+- SELECT * FROM teachers WHERE phone IS NULL;
 
